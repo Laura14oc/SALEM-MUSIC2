@@ -1,0 +1,256 @@
+/* Estilos generales */
+body {
+    background-color: #171717;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #171717;
+    border-bottom: 2px solid #00ff00;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #00ff00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menu toggle button (for mobile) */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #00ff00;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    background-color: #00ff00;
+    color: #171717;
+}
+
+/* Sección de inicio */
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(IMAGENES/IMG_20230118_192625.jpg) no-repeat center;
+    background-size: cover;
+    height: 140vh;
+    text-align: center;
+}
+
+.inicio .content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inicio h1 {
+    font-size: 48px;
+    color: #00ff00;
+}
+
+.inicio p {
+    font-size: 24px;
+}
+
+.inicio .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #171717;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.inicio .btn:hover {
+    background-color: #fff;
+    color: #171717;
+}
+
+/* Sección de clases */
+.clases {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.clases h2 {
+    font-size: 36px;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: #171717;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 18px;
+}
+
+/* Sección de horarios */
+.horarios {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.horarios h2 {
+    font-size: 36px;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.horarios p {
+    font-size: 24px;
+}
+
+/* Sección de contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    font-size: 24px;
+}
+
+.contacto a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.contacto a:hover {
+    color: #fff;
+}
+
+/* Media Queries para Responsiveness */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #171717;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        text-align: left;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .inicio h1 {
+        font-size: 36px;
+    }
+
+    .inicio p {
+        font-size: 18px;
+    }
+
+    .inicio .btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicio h1 {
+        font-size: 28px;
+    }
+
+    .inicio p {
+        font-size: 16px;
+    }
+
+    .inicio .btn {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .clases h2, .horarios h2, .contacto h2 {
+        font-size: 28px;
+    }
+
+    .clases p, .horarios p, .contacto p {
+        font-size: 18px;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

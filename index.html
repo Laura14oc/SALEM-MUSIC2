@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Salem Music Academy</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#">Academia Salem</a>
+        </div>
+        <nav class="navbar">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#clases">Nuestras Clases</a>
+                <a href="#horarios">Horarios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <h1>Bienvenidos a Salem Music Academy</h1>
+            <p>Aquí, la música se vive y se comparte. Ofrecemos formación personalizada en diversos instrumentos y estilos, con profesores apasionados que te guiarán en tu viaje musical. Únete a nuestra comunidad y descubre el poder de la música en un ambiente que inspira y transforma. ¡Te esperamos!</p>
+            <a href="https://wa.me/3052835347" class="btn">Contáctanos por WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="clases" id="clases">
+        <h2>Nuestras Clases</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Piano</h3>
+                <p>Descubre la magia del piano con nuestras clases personalizadas.</p>
+            </div>
+            <div class="box">
+                <h3>Percusión</h3>
+                <p>Aprende a dominar la batería y otros instrumentos de percusión.</p>
+            </div>
+            <div class="box">
+                <h3>Bajo</h3>
+                <p>Conviértete en un maestro del ritmo con nuestras clases de bajo.</p>
+            </div>
+            <div class="box">
+                <h3>Guitarra</h3>
+                <p>Domina la guitarra con técnicas avanzadas y prácticas.</p>
+            </div>
+            <div class="box">
+                <h3>Saxofón</h3>
+                <p>Aprende a tocar el saxofón con nuestras clases especializadas.</p>
+            </div>
+            <div class="box">
+                <h3>Técnica Vocal</h3>
+                <p>Desarrolla tu voz con nuestras clases de técnica vocal.</p>
+            </div>
+            <div class="box">
+                <h3>Teoría Musical</h3>
+                <p>Comprende la teoría detrás de la música y mejora tu desempeño.</p>
+            </div>
+            <div class="box">
+                <h3>Ensamble</h3>
+                <p>Participa en ensambles musicales y pon en práctica todo lo aprendido.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="horarios" id="horarios">
+        <h2>Horarios</h2>
+        <p>Viernes: 4 PM - 6 PM</p>
+        <p>Sábados: 9 AM - 2:30 PM</p>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>Ubicación: Cra 17 #36B-89, Barranquilla</p>
+        <p>WhatsApp: <a href="https://wa.me/3052835347">305 2835347</a></p>
+        <p>Email: <a href="mailto:salemmusic@example.com">salemmusic@example.com</a></p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
